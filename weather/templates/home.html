@@ -3,5 +3,9 @@
 
 <h1> Hello World! </h1>
 <br/>
-{{ api }}
+<div class="jumbotron {{ category_color }}">
+        <h1 class="display-4">api.Category.Name</h1>
+        <p class="lead">{{ api.ReportingArea }} Air Quality: {{ api.AQI }}</p>
+        <p>{{ category_description }}</p>
+      </div>
 {% endblock %}
